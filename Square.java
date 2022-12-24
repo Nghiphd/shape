@@ -5,24 +5,22 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Rectangle implements Shape 
+public class Square implements Shape 
 {
     private int length;
-    private int width;
     private String color;
     
-    public Rectangle(int length, int width, String color) {
+    public Square(int length, String color) {
         this.length = length;
-        this.width = width;
         this.color = color;
     }
     
     public double getArea() {
-        return this.length*this.width;
+        return this.length*this.length;
     }
 
     public double  getPerimeter() {
-        return 2*(this.width+this.length);
+        return 4*this.length;
     }
 
     public String getColor()
